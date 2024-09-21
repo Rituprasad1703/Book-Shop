@@ -1,0 +1,148 @@
+.App {
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f8e1e1; /* Light pastel pink background */
+    text-align: center;
+}
+
+.addHome {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Adjusted margin for better spacing */
+    cursor: pointer;
+    border: none;
+    background-color: #d19a98; /* Pastel brown */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.addHome:hover {
+    background-color: #b68887; /* Darker brown on hover */
+}
+
+.App h1 {
+    margin-bottom: 40px;
+    color: #5a3e3e; /* Darker brown for text */
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between book cards */
+}
+
+.book {
+    flex: 1 1 calc(25% - 20px); /* Responsive card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: white; /* White background for book card */
+    border: 1px solid #d1a3a3; /* Light border for separation */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.book img {
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book h2 {
+    color: #5a3e3e; /* Darker brown for title */
+}
+
+.book p {
+    text-align: center;
+    color: #7a5c5c; /* Soft dark color for description */
+}
+
+.book span {
+    font-weight: bold;
+    color: #5a3e3e; /* Darker brown for price */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons side by side */
+    width: 100%;
+    margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+.book button {
+    padding: 8px 12px;
+    background-color: #f7b2b2; /* Pastel pink for buttons */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book button:hover {
+    background-color: #ec9898; /* Darker pastel pink on hover */
+}
+
+.delete {
+    background-color: rgb(242, 100, 100); /* Red background */
+    color: white; /* White text */
+}
+
+.update {
+    background-color: rgb(139, 139, 234); /* Blue background */
+    color: white; /* White text */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form input, .form textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #d1a3a3; /* Light border */
+    border-radius: 5px;
+}
+
+.form button {
+    border: none;
+    padding: 10px;
+    background-color: #d19a98; /* Pastel brown */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #b68887; /* Darker brown on hover */
+}
+
+.seeAllBooks {
+    color: teal; /* Change this to your desired color */
+    text-decoration: none; /* Remove the underline */
+    margin-top: 10px; /* Optional: add some spacing */
+    display: inline-block; /* Optional: align it as a block element */
+}
+  
+.seeAllBooks:hover {
+    text-decoration: underline; /* Optional: underline on hover for effect */
+}
